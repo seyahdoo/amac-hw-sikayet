@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        tools:context=".MainActivity"
+        android:orientation="vertical">
+
+
+
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <AutoCompleteTextView
+                android:id="@+id/complaint_send_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="email"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <AutoCompleteTextView
+                android:id="@+id/complaint_send_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Summary"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <AutoCompleteTextView
+                android:id="@+id/complaint_send_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Detail"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+            android:text="Send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/complaint_send"/>
+
+
+
+</LinearLayout>
