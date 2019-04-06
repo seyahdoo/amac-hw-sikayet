@@ -16,5 +16,10 @@ class MainActivity : AppCompatActivity() {
             this.startActivity(myIntent)
         }
 
+        complaint_show.setOnClickListener {
+            val myIntent = Intent(this, ComplaintListShow::class.java)
+            this.startActivity(myIntent)
+        }
+
     }
 }
