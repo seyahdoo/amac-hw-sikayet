@@ -3,7 +3,12 @@ package com.sadogan.amachwsikayet
 import android.content.Context
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_complaint_add.*
+import android.support.v4.os.HandlerCompat.postDelayed
+
+
 
 class ComplaintAdd : AppCompatActivity() {
 
@@ -27,7 +32,12 @@ class ComplaintAdd : AppCompatActivity() {
             editor.putInt("complaint_count", complaintCount)
             editor.apply()
 
+            Toast.makeText(this, "şikayetiniz ekleniyor", Toast.LENGTH_SHORT).show()
 
+            Handler().postDelayed({
+                Toast.makeText(this, "eklendi", Toast.LENGTH_SHORT).show()
+                finish()
+            }, 1000)
 
         }
 
