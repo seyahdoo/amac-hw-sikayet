@@ -34,6 +34,8 @@ class ComplaintAdd : AppCompatActivity() {
 
             Toast.makeText(this, "şikayetiniz ekleniyor", Toast.LENGTH_SHORT).show()
 
+            complaint_send.isEnabled = false
+
             Handler().postDelayed({
                 Toast.makeText(this, "eklendi", Toast.LENGTH_SHORT).show()
                 finish()
